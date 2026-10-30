@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fafaf8">
+  <meta name="description" content="Field Lab for Physical Intelligence (FLAPI). Under construction.">
+  <title>FLAPI — Field Lab for Physical Intelligence</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      color-scheme: light;
+      --background: #fafaf8;
+      --foreground: #212521;
+      --muted: #636a64;
+      --line: #d7dad5;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      max-width: 1440px;
+      min-height: 100vh;
+      min-height: 100svh;
+      margin: 0 auto;
+      padding: 0 clamp(24px, 6.5vw, 96px);
+    }
+
+    .site-header {
+      display: flex;
+      align-items: center;
+      min-height: 112px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .wordmark {
+      font-size: 24px;
+      font-weight: 650;
+      letter-spacing: -0.065em;
+      line-height: 1;
+    }
+
+    main {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      padding: 78px 0 110px;
+    }
+
+    .status {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 0 0 38px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+
+    .status::before {
+      content: "";
+      flex: 0 0 auto;
+      width: 23px;
+      height: 1px;
+      background: var(--foreground);
+    }
+
+    h1 {
+      max-width: 1100px;
+      margin: 0;
+      font-family: "Iowan Old Style", "Baskerville", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      font-size: clamp(50px, 7.2vw, 104px);
+      font-weight: 400;
+      letter-spacing: -0.048em;
+      line-height: 1.075;
+    }
+
+    .description {
+      max-width: 540px;
+      margin: 42px 0 0;
+      color: var(--muted);
+      font-size: clamp(17px, 1.45vw, 19px);
+      line-height: 1.75;
+      letter-spacing: -0.01em;
+    }
+
+    @media (max-width: 640px) {
+      .site-header { min-height: 88px; }
+      .wordmark { font-size: 22px; }
+      main { padding: 88px 0 100px; }
+      .status { margin-bottom: 28px; }
+      h1 { font-size: clamp(44px, 11.4vw, 68px); line-height: 1.12; }
+      .description { margin-top: 32px; font-size: 16px; line-height: 1.7; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <div class="wordmark">FLAPI</div>
+    </header>
+
+    <main>
+      <p class="status">Under construction</p>
+      <h1>Field Lab for<br>Physical Intelligence.</h1>
+      <p class="description">We're working on something interesting.</p>
+    </main>
+  </div>
+</body>
+</html>
